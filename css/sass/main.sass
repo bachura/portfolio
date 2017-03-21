@@ -1,0 +1,176 @@
+@import "bourbon/bourbon"
+
+$bg_tomato: #f04949
+$bg_blue: #203748
+$bg_gray: #355267 
+$green_color: #2bce6c
+$color: #fff
+$button_color:  #39d084
+
+$text_size: 15px
+$small_size: 14px
+$big_size: 24px
+
+//Убрать свечение кнопок в браузере
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner 
+	border: 0 !important
+
+html
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+
+body
+	font-family: "OpenSans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	line-height: 1.4
+	overflow-x: hidden 
+	min-width: 320px
+
+textarea,
+input,
+	&:focus
+		outline: none
+li
+	list-style-type: none
+section
+	width: 100%
+	height: auto
+	display: block
+	padding-top: 50px
+	border-bottom: 1px solid #fff
+p,
+h1,
+h2
+	padding: 0
+	margin: 0
+
+.bg_blue
+	background: $bg_blue
+
+header
+	background: $bg_tomato
+	padding: 10px 0
+.image
+	display: block
+	float: left
+	background: #fff
+	width: 92px
+	height: 92px
+	border-radius: 50%
+	img
+		margin: 6px 6px
+		height: 80px
+		width: 80px
+		border-radius: 50%
+	
+.nav
+	ul
+		text-align: right
+		padding-top: 15px
+	li
+		display: inline-block
+		padding: 10px 30px
+		margin: 0 20px
+		&:hover
+			background: $bg_blue
+			border-radius: 25px
+		img
+			margin-right: 15px
+			padding-bottom: 2px
+		a
+			color: $color
+			text-transform: uppercase
+			font-size: $text_size
+			font-weight: 700
+			padding-top: 10px
+
+.autor_img
+	margin-top: 40px
+	background: #fff
+	width: 314px
+	height: 314px
+	border-radius: 50%
+	img
+		width: 300px
+		height: 300px
+		margin: 7px 7px
+		border-radius: 50%
+
+.autor_text
+	padding-top: 45px 
+	h1
+		color: $green_color
+		font-size: 30px
+	h2
+		color: $color
+		font-size: $big_size
+		font-weight: normal
+		padding-bottom: 40px
+	p
+		color: $color
+		font-size: $text_size
+		line-height: 1.7
+		font-weight: 300
+	.button
+		margin: 50px 0
+		background: $button_color
+		width: 236px
+		padding: 20px 30px
+		border-radius: 35px
+		color: #fff
+		font-size: 16px
+		font-family: 600
+		text-transform: uppercase
+		&:hover
+			background: $button_color * 0.9
+		img
+			margin-right: 10px
+			width: 30px
+			height: 25px
+
+// Progress Bar
+
+	
+
+
+footer
+	// position: fixed
+	// bottom: 0
+	// left: 0
+	// right: 0
+	background: $bg_gray
+	color: $color
+	padding: 20px
+
+.contacts
+	font-size: $small_size
+
+.copyright
+	text-align: center
+	font-size: 13px
+	padding-top: 10px
+
+.feedback
+	text-align: right
+	float: right
+	padding-right: 50px
+	padding-top: 10px
+	color: $color
+	text-transform: uppercase
+	font-size: $small_size
+	width: 200px
+	// &:active
+	&:hover
+		.fb
+			background: #4ace54
+			display: block
+			float: left
+			margin-top: 5px
+			margin-right: 5px
+			border-radius: 50%
+			width: 10px
+			height: 10px
